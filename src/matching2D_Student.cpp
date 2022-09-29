@@ -3,6 +3,36 @@
 
 using namespace std;
 
+// Non maxima suppression implementation
+// Input is harris corner image and was thresholded
+void nms(cv::Mat corner_img, std::vector<cv::KeyPoint> &keypoints, int swSize, int blockSize){
+    int sw_dist = floor(swSize / 2); 
+    // loop over all pixels in the corner image
+    for (int r = sw_dist; r < corner_img.rows - sw_dist - 1; r++){ // rows
+        for (int c = sw_dist; c < corner_img.cols - sw_dist - 1; c++){ // cols
+            // loop over all pixels within sliding window around the current pixel
+            unsigned int max_val{0}; // keeps track of strongest response
+            for (int rs = r - sw_dist; rs <= r + sw_dist; rs++){
+                for (int cs = c - sw_dist; cs <= c + sw_dist; cs++){
+                    // check wether max_val needs to be updated
+                    unsigned int new_val = corner_img.at<unsigned int>(rs, cs);
+                    max_val = max_val < new_val ? new_val : max_val;
+                }
+            }
+
+            // check wether current pixel is local maximum
+            if (corner_img.at<unsigned int>(r, c) == max_val){
+                // add to the keypoint vector
+                cv::KeyPoint newKeyPoint;
+                newKeyPoint.pt = cv::Point2f(r, c);
+                newKeyPoint.size = blockSize;
+                keypoints.push_back(newKeyPoint);
+            }
+                
+        }
+    }  
+}
+
 // Find best matches for keypoints in two camera images based on several matching methods
 void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::KeyPoint> &kPtsRef, cv::Mat &descSource, cv::Mat &descRef,
                       std::vector<cv::DMatch> &matches, std::string descriptorType, std::string matcherType, std::string selectorType)
@@ -100,4 +130,45 @@ void detKeypointsShiTomasi(vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool b
         imshow(windowName, visImage);
         cv::waitKey(0);
     }
+}
+
+void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool bVis){
+    // compute detector parameters based on image size
+    int blockSize = 2; // for every pixel, a blockSize × blockSize neighborhood is considered
+    int apertureSize = 3; // aperture parameter for Sobel operator (must be odd)
+    int minResponse = 100; // minimum value for a corner in the 8bit scaled response matrix
+    
+    double k = 0.04; // Harris parameter (see equation for details)
+    double qualityLevel = 0.01; // minimal accepted quality of image corners
+    int swSize = 7; // size of NMS window
+
+    // Apply corner detection
+    double t = (double)cv::getTickCount();
+
+     // Detect Harris corners and normalize output
+    cv::Mat dst, dst_norm, dst_norm_scaled;
+    dst = cv::Mat::zeros(img.size(), CV_32FC1 );
+    cv::cornerHarris( img, dst, blockSize, apertureSize, k, cv::BORDER_DEFAULT ); 
+    cv::normalize( dst, dst_norm, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat() );
+    cv::convertScaleAbs( dst_norm, dst_norm_scaled );
+
+    nms(dst_norm_scaled, keypoints, swSize, blockSize);
+
+    t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
+    cout << "Harris detection with n=" << keypoints.size() << " keypoints in " << 1000 * t / 1.0 << " ms" << endl;
+
+    // visualize results
+    if (bVis)
+    {
+        cv::Mat visImage = img.clone();
+        cv::drawKeypoints(img, keypoints, visImage, cv::Scalar::all(-1), cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+        string windowName = "Harris Corner Detector Results";
+        cv::namedWindow(windowName, 6);
+        imshow(windowName, visImage);
+        cv::waitKey(0);
+    }
+}
+
+void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std::string detectorType, bool bVis){
+
 }

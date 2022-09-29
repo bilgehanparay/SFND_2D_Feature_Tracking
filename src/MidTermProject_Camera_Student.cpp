@@ -13,6 +13,7 @@
 #include <opencv2/xfeatures2d.hpp>
 #include <opencv2/xfeatures2d/nonfree.hpp>
 
+/**/
 #include "dataStructures.h"
 #include "matching2D.hpp"
 
@@ -29,14 +30,14 @@ int main(int argc, const char *argv[])
 
     // camera
     string imgBasePath = dataPath + "images/";
-    string imgPrefix = "KITTI/2011_09_26/image_00/data/000000"; // left camera, color
+    string imgPrefix   = "KITTI/2011_09_26/image_00/data/000000"; // left camera, color
     string imgFileType = ".png";
-    int imgStartIndex = 0; // first file index to load (assumes Lidar and camera names have identical naming convention)
-    int imgEndIndex = 9;   // last file index to load
-    int imgFillWidth = 4;  // no. of digits which make up the file index (e.g. img-0001.png)
+    int imgStartIndex  = 0; // first file index to load (assumes Lidar and camera names have identical naming convention)
+    int imgEndIndex    = 9;   // last file index to load
+    int imgFillWidth   = 4;  // no. of digits which make up the file index (e.g. img-0001.png)
 
     // misc
-    int dataBufferSize = 2;       // no. of images which are held in memory (ring buffer) at the same time
+    int dataBufferSize = 3;       // no. of images which are held in memory (ring buffer) at the same time
     vector<DataFrame> dataBuffer; // list of data frames which are held in memory at the same time
     bool bVis = false;            // visualize results
 
@@ -62,8 +63,13 @@ int main(int argc, const char *argv[])
         // push image into data frame buffer
         DataFrame frame;
         frame.cameraImg = imgGray;
-        dataBuffer.push_back(frame);
-
+        if(dataBuffer.size() < dataBufferSize){
+            dataBuffer.push_back(frame);
+        }else{
+            dataBuffer.erase(dataBuffer.begin());
+            dataBuffer.push_back(frame);
+        }
+        
         //// EOF STUDENT ASSIGNMENT
         cout << "#1 : LOAD IMAGE INTO BUFFER done" << endl;
 
@@ -74,17 +80,18 @@ int main(int argc, const char *argv[])
         string detectorType = "SHITOMASI";
 
         //// STUDENT ASSIGNMENT
-        //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and enable string-based selection based on detectorType
+        //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and 
+        //// enable string-based selection based on detectorType
         //// -> HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
-
-        if (detectorType.compare("SHITOMASI") == 0)
-        {
+        if(detectorType.compare("SHITOMASI") == 0){
             detKeypointsShiTomasi(keypoints, imgGray, false);
+        }else if(detectorType.compare("HARRIS") == 0){
+            
+            detKeypointsHarris(keypoints, imgGray, true);
+        }else{
+            detKeypointsModern(keypoints, imgGray,  detectorType, false);
         }
-        else
-        {
-            //...
-        }
+
         //// EOF STUDENT ASSIGNMENT
 
         //// STUDENT ASSIGNMENT
