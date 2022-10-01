@@ -77,7 +77,7 @@ int main(int argc, const char *argv[])
 
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
-        string detectorType = "SHITOMASI";
+        string detectorType = "AKAZE";
 
         //// STUDENT ASSIGNMENT
         //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and 
@@ -86,7 +86,6 @@ int main(int argc, const char *argv[])
         if(detectorType.compare("SHITOMASI") == 0){
             detKeypointsShiTomasi(keypoints, imgGray, false);
         }else if(detectorType.compare("HARRIS") == 0){
-            
             detKeypointsHarris(keypoints, imgGray, true);
         }else{
             detKeypointsModern(keypoints, imgGray,  detectorType, false);
@@ -100,9 +99,14 @@ int main(int argc, const char *argv[])
         // only keep keypoints on the preceding vehicle
         bool bFocusOnVehicle = true;
         cv::Rect vehicleRect(535, 180, 180, 150);
-        if (bFocusOnVehicle)
-        {
-            // ...
+        vector<cv::KeyPoint>boundedKeyPoints;
+        if (bFocusOnVehicle){
+            for(auto it = keypoints.begin(); it <= keypoints.end();it++){
+                if(vehicleRect.contains((*it).pt))
+                    boundedKeyPoints.push_back(*it);
+            } 
+            keypoints.erase(keypoints.begin(), keypoints.end());
+            keypoints = boundedKeyPoints;   
         }
 
         //// EOF STUDENT ASSIGNMENT

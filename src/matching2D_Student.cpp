@@ -5,30 +5,36 @@ using namespace std;
 
 // Non maxima suppression implementation
 // Input is harris corner image and was thresholded
-void nms(cv::Mat corner_img, std::vector<cv::KeyPoint> &keypoints, int swSize, int blockSize){
+void nms(cv::Mat corner_img, std::vector<cv::KeyPoint> &keypoints, int swSize, int blockSize, unsigned char minResponse){
     int sw_dist = floor(swSize / 2); 
     // loop over all pixels in the corner image
     for (int r = sw_dist; r < corner_img.rows - sw_dist - 1; r++){ // rows
         for (int c = sw_dist; c < corner_img.cols - sw_dist - 1; c++){ // cols
             // loop over all pixels within sliding window around the current pixel
-            unsigned int max_val{0}; // keeps track of strongest response
+            unsigned char max_val{0}; // keeps track of strongest response
+            int r_max = -1;
+            int c_max = -1;
             for (int rs = r - sw_dist; rs <= r + sw_dist; rs++){
                 for (int cs = c - sw_dist; cs <= c + sw_dist; cs++){
                     // check wether max_val needs to be updated
-                    unsigned int new_val = corner_img.at<unsigned int>(rs, cs);
-                    max_val = max_val < new_val ? new_val : max_val;
+                    unsigned char new_val = (unsigned char)corner_img.at<unsigned char>(rs, cs);
+                    // max_val = max_val < new_val ? new_val : max_val;
+                    if(max_val < new_val && new_val > minResponse){
+                        max_val = new_val;
+                        r_max = rs;
+                        c_max = cs;
+                    }
                 }
             }
 
             // check wether current pixel is local maximum
-            if (corner_img.at<unsigned int>(r, c) == max_val){
+            if (r == r_max && c == c_max){
                 // add to the keypoint vector
                 cv::KeyPoint newKeyPoint;
-                newKeyPoint.pt = cv::Point2f(r, c);
+                newKeyPoint.pt = cv::Point2f(c, r);
                 newKeyPoint.size = blockSize;
                 keypoints.push_back(newKeyPoint);
             }
-                
         }
     }  
 }
@@ -136,10 +142,9 @@ void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool
     // compute detector parameters based on image size
     int blockSize = 2; // for every pixel, a blockSize × blockSize neighborhood is considered
     int apertureSize = 3; // aperture parameter for Sobel operator (must be odd)
-    int minResponse = 100; // minimum value for a corner in the 8bit scaled response matrix
+    unsigned char minResponse = 100; // minimum value for a corner in the 8bit scaled response matrix
     
     double k = 0.04; // Harris parameter (see equation for details)
-    double qualityLevel = 0.01; // minimal accepted quality of image corners
     int swSize = 7; // size of NMS window
 
     // Apply corner detection
@@ -149,11 +154,20 @@ void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool
     cv::Mat dst, dst_norm, dst_norm_scaled;
     dst = cv::Mat::zeros(img.size(), CV_32FC1 );
     cv::cornerHarris( img, dst, blockSize, apertureSize, k, cv::BORDER_DEFAULT ); 
-    cv::normalize( dst, dst_norm, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat() );
+    double ret, thresh1, max, min;
+    cv::minMaxLoc(dst, &min, &max);
+    cv::normalize( dst, dst_norm, 0, 255, cv::NORM_MINMAX, CV_8U, cv::Mat() );
     cv::convertScaleAbs( dst_norm, dst_norm_scaled );
-
-    nms(dst_norm_scaled, keypoints, swSize, blockSize);
-
+    /*ret,thresh1 = cv::threshold(dst_norm_scaled, 
+                                dst_norm_scaled, 
+                                minResponse, 
+                                255, 
+                                cv::THRESH_BINARY);*/
+    nms(dst_norm_scaled, keypoints, swSize, blockSize, minResponse);
+    //imshow("harris scaled", dst_norm_scaled);
+    // cv::Mat visImageScaled = dst_norm_scaled.clone();
+    // cv::drawKeypoints(dst_norm_scaled, keypoints, visImageScaled, cv::Scalar::all(-1), cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+    // imshow("harris keypoints", visImageScaled);
     t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
     cout << "Harris detection with n=" << keypoints.size() << " keypoints in " << 1000 * t / 1.0 << " ms" << endl;
 
@@ -170,5 +184,76 @@ void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool
 }
 
 void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std::string detectorType, bool bVis){
-
+    if(detectorType.compare("FAST") == 0){
+        int threshold = 50;
+        bool bNMS = true; // use NMS in FAST
+        cv::FastFeatureDetector::DetectorType type = cv::FastFeatureDetector::TYPE_9_16;
+        cv::Ptr<cv::FeatureDetector> detector = cv::FastFeatureDetector::create(threshold, bNMS, type);
+        double t = (double)cv::getTickCount();
+        detector->detect(img, keypoints);
+        t = (double)cv::getTickCount() - t;
+        
+        cv::Mat visImage = img.clone();
+        cv::drawKeypoints(img, 
+                          keypoints, 
+                          visImage, 
+                          cv::Scalar::all(-1), 
+                          cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+        std::string windowName = "FAST Results";
+        cv::namedWindow(windowName, 2);
+        imshow(windowName, visImage);
+        cv::waitKey(0);
+    }else if(detectorType.compare("BRISK") == 0){
+        cv::Ptr<cv::FeatureDetector> detector = cv::BRISK::create();
+        detector->detect(img, keypoints);
+        cv::Mat visImage = img.clone();
+        cv::drawKeypoints(img, 
+                          keypoints, 
+                          visImage, 
+                          cv::Scalar::all(-1), 
+                          cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+        std::string windowName = "BRISK Results";
+        cv::namedWindow(windowName, 2);
+        imshow(windowName, visImage);
+        cv::waitKey(0);  
+    }else if(detectorType.compare("ORB") == 0){
+        cv::Ptr<cv::FeatureDetector> detector = cv::ORB::create();
+        detector->detect(img, keypoints);
+        cv::Mat visImage = img.clone();
+        cv::drawKeypoints(img, 
+                            keypoints, 
+                            visImage, 
+                            cv::Scalar::all(-1), 
+                            cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+        std::string windowName = "ORB Results";
+        cv::namedWindow(windowName, 2);
+        imshow(windowName, visImage);
+        cv::waitKey(0);     
+    }else if(detectorType.compare("AKAZE") == 0){
+        cv::Ptr<cv::FeatureDetector> detector = cv::AKAZE::create();
+        detector->detect(img, keypoints);
+        cv::Mat visImage = img.clone();
+        cv::drawKeypoints(img, 
+                            keypoints, 
+                            visImage, 
+                            cv::Scalar::all(-1), 
+                            cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+        std::string windowName = "AKAZE Results";
+        cv::namedWindow(windowName, 2);
+        imshow(windowName, visImage);
+        cv::waitKey(0);     
+    }else if(detectorType.compare("SIFT") == 0){
+        cv::Ptr<cv::SIFT> siftPtr = cv::SIFT::create();
+        siftPtr->detect(img, keypoints);
+        cv::Mat visImage = img.clone();
+        cv::drawKeypoints(img, 
+                          keypoints, 
+                          visImage, 
+                          cv::Scalar::all(-1), 
+                          cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
+        std::string windowName = "SIFT Results";
+        cv::namedWindow(windowName, 2);
+        imshow(windowName, visImage);
+        cv::waitKey(0);  
+    }
 }

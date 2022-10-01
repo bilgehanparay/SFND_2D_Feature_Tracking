@@ -18,7 +18,7 @@
 
 #include "dataStructures.h"
 
-void nms(cv::Mat corner_img, std::vector<cv::KeyPoint> &keypoints,int swSize, int blockSize);
+void nms(cv::Mat corner_img, std::vector<cv::KeyPoint> &keypoints,int swSize, int blockSize, unsigned char minResponse);
 void detKeypointsHarris(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool bVis=false);
 void detKeypointsShiTomasi(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, bool bVis=false);
 void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std::string detectorType, bool bVis=false);
