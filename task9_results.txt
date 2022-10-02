@@ -1,0 +1,293 @@
+Task 9: duration in ms for detection + description
+Detectors: HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
+Descriptors: BRIEF, ORB, FREAK, AKAZE, SIFT
+
+Detector HARRIS:
+    Descriptor BRIEF
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 503.484ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 520.48ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 384.527ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 416.667ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 151.688ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 130.972ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 100.961ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 100.031ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 120.744ms
+TASK9: Detector-HARRIS Descriptor-BRIEF Total time for detection+description: 101.618ms
+    Descriptor ORB
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 487.775ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 129.011ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 118.489ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 133.018ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 114.65ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 299.145ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 109.986ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 131.736ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 124.822ms
+TASK9: Detector-HARRIS Descriptor-ORB Total time for detection+description: 136.79ms
+    Descriptor FREAK
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 1763.86ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 936.239ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 344.154ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 153.757ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 156.813ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 156.763ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 156.777ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 175.191ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 164.409ms
+TASK9: Detector-HARRIS Descriptor-FREAK Total time for detection+description: 201.223ms
+    Descriptor AKAZE
+
+    Descriptor SIFT
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 591.366ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 743.503ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 164.101ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 140.973ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 149.044ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 140.819ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 124.661ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 136.632ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 148.626ms
+TASK9: Detector-HARRIS Descriptor-SIFT Total time for detection+description: 138.888ms
+
+Detector FAST:
+    Descriptor BRIEF
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 2739.33ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 1991.98ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 167.07ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 161.539ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 167.582ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 505.409ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 449.505ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 287.485ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 213.114ms
+TASK9: Detector-FAST Descriptor-BRIEF Total time for detection+description: 444.731ms
+    Descriptor ORB
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 555.562ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 473.348ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 119.713ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 97.6765ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 113.722ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 129.182ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 104.066ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 104.949ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 105.032ms
+TASK9: Detector-FAST Descriptor-ORB Total time for detection+description: 104.763ms
+    Descriptor FREAK
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 652.554ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 619.048ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 179.199ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 188.227ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 209.244ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 217.61ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 208.278ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 190.783ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 225.411ms
+TASK9: Detector-FAST Descriptor-FREAK Total time for detection+description: 243.614ms
+    Descriptor AKAZE
+
+    Descriptor SIFT
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 691.238ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 208.086ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 173.738ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 171.856ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 162.292ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 200.012ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 176.896ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 177.001ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 167.058ms
+TASK9: Detector-FAST Descriptor-SIFT Total time for detection+description: 164.598ms
+
+Detector BRISK:
+    Descriptor BRIEF
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 966.671ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 891.061ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 427.602ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 252.297ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 144.217ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 102.461ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 130.082ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 104.453ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 115.661ms
+TASK9: Detector-BRISK Descriptor-BRIEF Total time for detection+description: 130.054ms
+    Descriptor ORB
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 1038.44ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 175.592ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 148.432ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 138.552ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 122.018ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 147.084ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 146.292ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 174.318ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 159.629ms
+TASK9: Detector-BRISK Descriptor-ORB Total time for detection+description: 174.522ms
+    Descriptor FREAK
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 759.133ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 395.354ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 470.515ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 484.58ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 316.925ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 327.183ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 357ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 312.717ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 240.522ms
+TASK9: Detector-BRISK Descriptor-FREAK Total time for detection+description: 265.905ms
+    Descriptor AKAZE
+    Descriptor SIFT
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 701.11ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 218.553ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 207.273ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 233.194ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 212.847ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 208.347ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 207.496ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 221.767ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 198.377ms
+TASK9: Detector-BRISK Descriptor-SIFT Total time for detection+description: 159.845ms
+
+Detector ORB:
+    Descriptor BRIEF
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 586.711ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 429.741ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 110.964ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 111.706ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 92.1995ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 126.82ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 103.256ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 111.095ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 127.253ms
+TASK9: Detector-ORB Descriptor-BRIEF Total time for detection+description: 127.353ms
+    Descriptor ORB
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 754.808ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 156.471ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 140.027ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 140.782ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 163.925ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 165.988ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 187.256ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 186.278ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 181.083ms
+TASK9: Detector-ORB Descriptor-ORB Total time for detection+description: 188.816ms
+    Descriptor FREAK
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 462.906ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 160.786ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 157.402ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 174.371ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 156.066ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 182.672ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 117.317ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 160.446ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 238.618ms
+TASK9: Detector-ORB Descriptor-FREAK Total time for detection+description: 242.065ms
+    Descriptor AKAZE
+    Descriptor SIFT
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 434.969ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 94.922ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 178.859ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 136.366ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 175.075ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 177.324ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 186.321ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 184.382ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 169.338ms
+TASK9: Detector-ORB Descriptor-SIFT Total time for detection+description: 177.785ms
+
+Detector AKAZE:
+    Descriptor BRIEF
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 547.471ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 152.307ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 143.912ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 86.6468ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 134.546ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 158.537ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 110.398ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 160.198ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 127.849ms
+TASK9: Detector-AKAZE Descriptor-BRIEF Total time for detection+description: 734.768ms
+    Descriptor ORB
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 1645.33ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 844.321ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 187.506ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 120.059ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 120.213ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 145.374ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 187.24ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 188.329ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 187.605ms
+TASK9: Detector-AKAZE Descriptor-ORB Total time for detection+description: 274.513ms
+
+    Descriptor FREAK
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 568.568ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 229.616ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 151.734ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 216.721ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 183.992ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 184.927ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 143.059ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 138.462ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 313.605ms
+TASK9: Detector-AKAZE Descriptor-FREAK Total time for detection+description: 241.592ms
+    
+    Descriptor AKAZE
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 1117.77ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 532.609ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 187.449ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 182.056ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 167.847ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 202.859ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 132.409ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 202.039ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 276.01ms
+TASK9: Detector-AKAZE Descriptor-AKAZE Total time for detection+description: 205.218ms
+    
+    Descriptor SIFT
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 484.891ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 185.519ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 152.473ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 191.065ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 151.418ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 291.942ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 180.5ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 177.943ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 126.268ms
+TASK9: Detector-AKAZE Descriptor-SIFT Total time for detection+description: 193.632ms
+484,
+Detector SIFT:
+    Descriptor BRIEF
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 447.34ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 136.461ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 120.073ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 109.953ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 96.0091ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 99.5281ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 134.277ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 125.934ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 126.197ms
+TASK9: Detector-SIFT Descriptor-BRIEF Total time for detection+description: 185.859ms
+
+    Descriptor ORB
+
+    Descriptor FREAK
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 523.286ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 125.028ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 134.164ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 184.171ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 172.005ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 165.797ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 134.293ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 194.759ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 241.553ms
+TASK9: Detector-SIFT Descriptor-FREAK Total time for detection+description: 215.097ms
+
+    Descriptor AKAZE
+    Descriptor SIFT
+Detector-SIFT Descriptor-SIFT Total time for detection+description: 463.039ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 116.695ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 135.72ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 126.388ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 177.326ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 204.161ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 128.534ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 161.587ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 159.792ms
+TASK9: Detector-SIFT Descriptor-SIFT Total time for detection+description: 192.324ms

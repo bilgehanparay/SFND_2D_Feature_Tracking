@@ -1,0 +1,74 @@
+Task 7: Number of Keypoints and Neighborhood size for each detector:
+HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
+HARRIS: 
+TASK7: HARRIS Number of Keypoints: 19 size mean: 2.10526 size var: 0.0116635
+TASK7: HARRIS Number of Keypoints: 15 size mean: 2.13333 size var: 0.018963
+TASK7: HARRIS Number of Keypoints: 20 size mean: 2.1 size var: 0.0105
+TASK7: HARRIS Number of Keypoints: 21 size mean: 2.09524 size var: 0.00950224
+TASK7: HARRIS Number of Keypoints: 27 size mean: 2.07407 size var: 0.00569018
+TASK7: HARRIS Number of Keypoints: 49 size mean: 2.04082 size var: 0.00169997
+TASK7: HARRIS Number of Keypoints: 18 size mean: 2.11111 size var: 0.0130316
+TASK7: HARRIS Number of Keypoints: 33 size mean: 2.06061 size var: 0.00378439
+TASK7: HARRIS Number of Keypoints: 26 size mean: 2.07692 size var: 0.00614475
+TASK7: HARRIS Number of Keypoints: 38 size mean: 2.05263 size var: 0.00284299
+
+FAST: 
+TASK7: FAST Number of Keypoints: 95 size mean: 7.07368 size var: 0.00548651
+TASK7: FAST Number of Keypoints: 95 size mean: 7.07368 size var: 0.00548651
+TASK7: FAST Number of Keypoints: 93 size mean: 7.07527 size var: 0.00572631
+TASK7: FAST Number of Keypoints: 97 size mean: 7.07217 size var: 0.00526147
+TASK7: FAST Number of Keypoints: 98 size mean: 7.07143 size var: 0.00515413
+TASK7: FAST Number of Keypoints: 99 size mean: 7.07071 size var: 0.00504996
+TASK7: FAST Number of Keypoints: 89 size mean: 7.07865 size var: 0.00625563
+TASK7: FAST Number of Keypoints: 92 size mean: 7.07609 size var: 0.00585215
+TASK7: FAST Number of Keypoints: 100 size mean: 7.07 size var: 0.00494903
+TASK7: FAST Number of Keypoints: 94 size mean: 7.07447 size var: 0.00560449
+
+BRISK:
+
+TASK7: BRISK Number of Keypoints: 264 size mean: 21.596 size var: 212.822
+TASK7: BRISK Number of Keypoints: 282 size mean: 21.827 size var: 212.489
+TASK7: BRISK Number of Keypoints: 282 size mean: 21.6998 size var: 191.253
+TASK7: BRISK Number of Keypoints: 277 size mean: 20.393 size var: 159.65
+TASK7: BRISK Number of Keypoints: 297 size mean: 22.6329 size var: 221.055
+TASK7: BRISK Number of Keypoints: 279 size mean: 22.9821 size var: 250.518
+TASK7: BRISK Number of Keypoints: 289 size mean: 21.8304 size var: 216.004
+TASK7: BRISK Number of Keypoints: 272 size mean: 22.1803 size var: 226.658
+TASK7: BRISK Number of Keypoints: 266 size mean: 22.619 size var: 230.831
+TASK7: BRISK Number of Keypoints: 254 size mean: 22.0818 size var: 215.617
+
+ORB:
+TASK7: ORB Number of Keypoints: 92 size mean: 57.4093 size var: 668.767
+TASK7: ORB Number of Keypoints: 102 size mean: 57.5312 size var: 687.583
+TASK7: ORB Number of Keypoints: 106 size mean: 56.7873 size var: 678.469
+TASK7: ORB Number of Keypoints: 113 size mean: 55.4728 size var: 632.848
+TASK7: ORB Number of Keypoints: 109 size mean: 57.0855 size var: 629.393
+TASK7: ORB Number of Keypoints: 125 size mean: 56.9343 size var: 600
+TASK7: ORB Number of Keypoints: 130 size mean: 57.0544 size var: 649.51
+TASK7: ORB Number of Keypoints: 129 size mean: 55.718 size var: 614.602
+TASK7: ORB Number of Keypoints: 127 size mean: 54.9652 size var: 640.655
+TASK7: ORB Number of Keypoints: 128 size mean: 54.6792 size var: 562.762
+
+AKAZE:
+TASK7: AKAZE Number of Keypoints: 166 size mean: 7.7581 size var: 15.4342
+TASK7: AKAZE Number of Keypoints: 157 size mean: 7.52078 size var: 12.4706
+TASK7: AKAZE Number of Keypoints: 161 size mean: 7.48193 size var: 12.6676
+TASK7: AKAZE Number of Keypoints: 155 size mean: 7.60619 size var: 12.0161
+TASK7: AKAZE Number of Keypoints: 163 size mean: 7.76264 size var: 11.8731
+TASK7: AKAZE Number of Keypoints: 164 size mean: 7.71731 size var: 11.4666
+TASK7: AKAZE Number of Keypoints: 173 size mean: 7.76653 size var: 11.8328
+TASK7: AKAZE Number of Keypoints: 175 size mean: 7.85356 size var: 12.3724
+TASK7: AKAZE Number of Keypoints: 177 size mean: 7.84268 size var: 12.2577
+TASK7: AKAZE Number of Keypoints: 179 size mean: 7.91258 size var: 13.0247
+
+SIFT:
+TASK7: SIFT Number of Keypoints: 138 size mean: 5.04522 size var: 35.2442
+TASK7: SIFT Number of Keypoints: 132 size mean: 5.10593 size var: 38.1733
+TASK7: SIFT Number of Keypoints: 124 size mean: 4.96821 size var: 36.2586
+TASK7: SIFT Number of Keypoints: 137 size mean: 4.76309 size var: 27.4626
+TASK7: SIFT Number of Keypoints: 134 size mean: 4.73341 size var: 30.4275
+TASK7: SIFT Number of Keypoints: 140 size mean: 4.70571 size var: 31.118
+TASK7: SIFT Number of Keypoints: 137 size mean: 5.43371 size var: 42.4549
+TASK7: SIFT Number of Keypoints: 148 size mean: 4.67551 size var: 26.5302
+TASK7: SIFT Number of Keypoints: 159 size mean: 5.54478 size var: 44.506
+TASK7: SIFT Number of Keypoints: 137 size mean: 5.65655 size var: 44.6522

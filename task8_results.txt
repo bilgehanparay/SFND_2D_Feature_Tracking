@@ -1,0 +1,269 @@
+Task 8: Number of Matches for each detector descriptor type
+Detectors: HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
+Descriptors: BRIEF, ORB, FREAK, AKAZE, SIFT
+
+
+Detector SIFT
+    Descriptor BRIEF
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 138
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 132
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 124
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 137
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 134
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 140
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 137
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 148
+TASK8: Detector-SIFT Descriptor-BRIEF Number of Matched Points: 159
+    Descriptor ORB
+- Exception err
+    Descriptor FREAK
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 137
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 131
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 123
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 136
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 133
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 139
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 135
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 147
+TASK8: Detector-SIFT Descriptor-FREAK Number of Matched Points: 158
+    Descriptor AKAZE
+- Exception err
+    Descriptor SIFT
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 138
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 132
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 124
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 137
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 134
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 140
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 137
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 148
+TASK8: Detector-SIFT Descriptor-SIFT Number of Matched Points: 159
+
+Detector AKAZE
+    Descriptor BRIEF
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 166
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 157
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 161
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 155
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 163
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 164
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 173
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 175
+TASK8: Detector-AKAZE Descriptor-BRIEF Number of Matched Points: 177
+    Descriptor ORB
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 166
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 157
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 161
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 155
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 163
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 164
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 173
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 175
+TASK8: Detector-AKAZE Descriptor-ORB Number of Matched Points: 177
+    Descriptor FREAK
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 166
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 157
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 161
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 155
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 163
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 164
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 173
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 175
+TASK8: Detector-AKAZE Descriptor-FREAK Number of Matched Points: 177
+    Descriptor AKAZE
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 166
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 157
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 161
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 155
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 163
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 164
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 173
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 175
+TASK8: Detector-AKAZE Descriptor-AKAZE Number of Matched Points: 177
+    Descriptor SIFT
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 166
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 157
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 161
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 155
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 163
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 164
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 173
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 175
+TASK8: Detector-AKAZE Descriptor-SIFT Number of Matched Points: 177
+
+Detector ORB
+    Descriptor BRIEF
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 92
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 102
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 106
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 113
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 109
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 125
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 130
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 129
+TASK8: Detector-ORB Descriptor-BRIEF Number of Matched Points: 127
+    Descriptor ORB
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 92
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 102
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 106
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 113
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 109
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 125
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 129
+TASK8: Detector-ORB Descriptor-ORB Number of Matched Points: 127
+    Descriptor FREAK
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 46
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 53
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 56
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 65
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 55
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 64
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 66
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 71
+TASK8: Detector-ORB Descriptor-FREAK Number of Matched Points: 73
+    Descriptor AKAZE
+- Exception err
+    Descriptor SIFT
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 92
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 102
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 106
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 113
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 109
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 125
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 130
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 129
+TASK8: Detector-ORB Descriptor-SIFT Number of Matched Points: 127
+
+
+Detector BRISK
+    Descriptor BRIEF
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 264
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 282
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 282
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 277
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 297
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 279
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 289
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 272
+TASK8: Detector-BRISK Descriptor-BRIEF Number of Matched Points: 266
+    Descriptor ORB
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 264
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 282
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 282
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 277
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 297
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 279
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 289
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 272
+TASK8: Detector-BRISK Descriptor-ORB Number of Matched Points: 266
+    Descriptor FREAK
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 242
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 260
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 263
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 264
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 274
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 256
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 269
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 255
+TASK8: Detector-BRISK Descriptor-FREAK Number of Matched Points: 243
+    Descriptor AKAZE
+Exception err
+    Descriptor SIFT
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 264
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 282
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 282
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 277
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 297
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 279
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 289
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 272
+TASK8: Detector-BRISK Descriptor-SIFT Number of Matched Points: 266
+
+Detector FAST
+    Descriptor BRIEF
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 93
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 97
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 98
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 99
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 89
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 92
+TASK8: Detector-FAST Descriptor-BRIEF Number of Matched Points: 100
+    Descriptor ORB
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 93
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 97
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 98
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 99
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 89
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 92
+TASK8: Detector-FAST Descriptor-ORB Number of Matched Points: 100
+    Descriptor FREAK
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 93
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 97
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 98
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 99
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 89
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 92
+TASK8: Detector-FAST Descriptor-FREAK Number of Matched Points: 100
+    Descriptor AKAZE
+- Exception err
+    Descriptor SIFT
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 95
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 93
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 97
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 98
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 99
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 89
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 92
+TASK8: Detector-FAST Descriptor-SIFT Number of Matched Points: 100
+
+Detector HARRIS
+    Descriptor BRIEF
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 19
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 15
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 20
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 21
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 27
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 49
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 18
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 33
+TASK8: Detector-HARRIS Descriptor-BRIEF Number of Matched Points: 26
+    Descriptor ORB
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 19
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 15
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 20
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 21
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 27
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 49
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 18
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 33
+TASK8: Detector-HARRIS Descriptor-ORB Number of Matched Points: 26
+    Descriptor FREAK
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 19
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 15
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 20
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 21
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 27
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 49
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 18
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 33
+TASK8: Detector-HARRIS Descriptor-FREAK Number of Matched Points: 26
+    Descriptor AKAZE
+- Exception err
+    Descriptor SIFT
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 19
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 15
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 20
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 21
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 27
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 49
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 18
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 33
+TASK8: Detector-HARRIS Descriptor-SIFT Number of Matched Points: 26
+

@@ -74,12 +74,6 @@ opencv2/xfeatures2d/nonfree.hpp
 dataStructures.h
 /home/bilgehan/Udacity/Sensor Fusion/SFND_2D_Feature_Tracking/src/dataStructures.h
 
-/home/bilgehan/Udacity/Sensor Fusion/SFND_2D_Feature_Tracking/src/matching2D_Student.cpp
-numeric
--
-matching2D.hpp
-/home/bilgehan/Udacity/Sensor Fusion/SFND_2D_Feature_Tracking/src/matching2D.hpp
-
 /usr/local/include/opencv4/opencv2/core.hpp
 opencv2/core/cvdef.h
 /usr/local/include/opencv4/opencv2/opencv2/core/cvdef.h
